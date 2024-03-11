@@ -1,0 +1,33 @@
+
+.triangle2{
+  
+   border-top: 50px solid blue;
+   border-right:50px solid  blue;
+   border-left: 50px solid transparent;
+   border-bottom: 50px solid transparent;    
+}
+body{
+    display: flex;
+}
+
+.triangle3{
+    margin-left: 10px;
+    border-top: 50px solid blue;
+    border-right:50px solid  transparent;
+    border-left: 50px solid blue;
+    border-bottom: 50px solid transparent;    
+ }
+ .triangle4{
+    margin-left: 10px;
+    border-top: 50px solid transparent;
+    border-right:50px solid  blue;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid blue;    
+ }
+ .triangle5{
+    margin-left: 10px;
+    border-top: 50px solid transparent;
+    border-right:50px solid  transparent;
+    border-left: 50px solid blue;
+    border-bottom: 50px solid blue;    
+ }

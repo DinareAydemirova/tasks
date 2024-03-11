@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+
+    border: 5px solid black;
+  
+    background-image: url(/images/download.jfif);
+    background-repeat: no-repeat;
+    overflow: scroll;
+    height: 600px;
+    width: 500px;
+    background-size: 50%;
+}
+h2{
+    padding: 10px;
+}

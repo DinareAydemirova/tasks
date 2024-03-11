@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border: 1px solid black;
+}
+.texts{
+    display: flex;
+ padding: 10px;
+    background-color: yellow;
+    gap: 20px;
+}
+.text{
+    padding: 20px 10px;
+    display: flex;
+    gap:10px ;
+}
+.text div{
+    border: 2px solid black;
+    width: max-content;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+
+}
