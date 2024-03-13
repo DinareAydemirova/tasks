@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin: 100px 0;
+    padding: 50px 0;
+    
+}
+
+.main {
+    display: flex;
+
+}
+
+.leftSide {
+    display: flex;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    gap: 9px;
+    margin-left: 164px;
+    
+}
+.rightSide{
+    margin-left: 25px;
+    
+}
+h1{
+    margin-bottom: 30px;
+}
+.description{
+   
+    margin-top: 20px;
+    height: 30px;
+    width: 700px;
+}
+.share{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+   
+}
+.fa-brands{
+   padding: 10px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.126);
+    color: black;
+}
+.price{
+    font-size: 22px;
+    opacity: 0.7;
+}
+
+.pm{
+    margin-top: 100px;
+    padding: 15px 10px;
+    
+}
+.add{
+  background-color: black;
+  color: orange;
+  margin-top: 100px;
+  padding: 15px 20px;
+}
+.stock{
+    margin-top: 20px;
+}
+.availability {
+    color: rgb(21, 237, 21); 
+}
