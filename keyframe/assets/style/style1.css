@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+display: flex;
+justify-content: center;
+
+}
+.top{
+    width: 50px;
+    height: 20px;
+    background-color: black;
+    border: 2px solid gray;
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto
+}
+
+.animation{
+    width: 150px;
+    height: 250px;
+    background-color: black;
+  border-radius: 20px;
+  position: relative;
+ overflow: hidden;
+ 
+}
+.box{
+    width: 150px;
+    height: 250px;
+    animation: box linear 2s infinite ;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+}
+@keyframes box{
+    0%{
+        height: 0;
+      transform: translate(0);
+      background-color: red;
+    }
+    25%{
+        transform: translate(0);
+        background-color: orange;
+    }
+    50%{
+        transform: translate();
+        background-color: yellow;
+    }
+    75%{
+        transform: translate();
+        background-color: green;
+    }
+}

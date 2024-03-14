@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    animation-name: example;
+    animation: example 5s linear infinite alternate;
+}
+
+@keyframes example{
+    0% {
+        transform: translate(0);
+    }
+    25%{
+      transform: translate(400px, calc(100vh - 100px));
+     background-color:red ;
+    }
+    50%{
+        transform: translate(800px, 0);
+        background-color: green;
+    }
+    75%{
+        transform: translate(1200px, calc(100vh - 100px))
+    }
+    100%{
+        transform: translate(1600px, 0);
+    }
+}
