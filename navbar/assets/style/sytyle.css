@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navBarTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+.rightNav{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+}
+.leftNav{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+
+}
+.fa-brands {
+    padding: 10px;
+   
+    background-color: white;
+    margin-left: 10px;
+    color: orange;
+}
+.fa-location-dot{
+    color: orange;
+}
+.fa-clock{
+    color: orange;
+}
+.fa-phone{
+    padding: 10px;
+    color: orange;
+}
+h1{
+    color: orange;
+    margin-left: 30px;
+   
+}
+.middleNavBar{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+.pages{
+    list-style-type: none;
+    display: flex;
+   align-items: center;
+}
+a{
+    display: flex;
+    padding: 20px;
+     text-decoration: none;
+     color: black;
+}
+.get{
+    padding: 30px;
+    background-color: orange;
+    border: none;
+    color: white;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+   
+}
+.read{
+    padding: 15px 30px;
+    background-color: orange;
+    color: white;
+    border: none;
+}
+.free{
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+h6{
+    padding-bottom: 20px;
+}
+.lorem{
+    padding:20px  190px;
+}
+
+.bottomNavBar{
+    font-size: 30px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./carousel-1.jpg);
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.color{
+    height: 800px;
+    position: absolute;
+    z-index: 1;
+}
+.page{
+    font-size: 15px;
+    position: absolute;
+    border: 1px solid white;
+    background-color: white;
+    top:150px;
+    right:250px;
+   z-index: 5;
+   display: none;
+
+    
+}
+a:hover ~ .page{
+    display: block;
+}
