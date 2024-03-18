@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.boxes{
+    display: grid;
+    grid-template-areas: "";
+}
+.box1{
+   
+    background-color: palevioletred;
+    padding: 20px;
+}
+.box2{
+    
+    background-color: purple;
+    padding: 20px;
+}
+.box3{
+   
+    background-color: orange;
+    padding: 20px;
+}
+.box4{
+   
+    background-color: yellow;
+    padding: 20px;
+
+}
+.box5{
+
+    background-color: green;
+    padding: 20px;
+
+}
+.box6{
+    background-color: gray;
+    padding: 20px;
+}
+.box7{
+    background-color:aquamarine;
+    padding: 20px;
+}
+.box8{
+    background-color: rgb(255, 0, 85);
+    padding: 20px;
+}
+.box9{
+    background-color: rgb(0, 255, 255);
+    padding: 20px;
+
+}
+.box10{
+    background-color: rgb(128, 105, 0);
+    padding: 20px;
+
+}
+.box11{
+    background-color: green;
+    padding: 20px;
+
+}
+.box12{
+    background-color: gray;
+    padding: 20px;
+}
