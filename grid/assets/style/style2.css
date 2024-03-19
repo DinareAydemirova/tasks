@@ -5,63 +5,94 @@
 }
 .boxes{
     display: grid;
-    grid-template-areas: "";
+    grid-template-areas: 
+    "box1 box2 box2 box3 box3 box3 box4"
+    "box5 box2 box2 box3 box3 box3 box6"
+    "box7 box8 box9 box3 box3 box3 box10"
+    "box11 box11 box11 box3 box3 box3 box12";
 }
 .box1{
-   
+   grid-area: box1;
     background-color: palevioletred;
     padding: 20px;
 }
 .box2{
-    
+    grid-area: box2;
     background-color: purple;
     padding: 20px;
 }
 .box3{
-   
+    grid-area: box3;
     background-color: orange;
     padding: 20px;
 }
 .box4{
-   
+    grid-area: box4;
     background-color: yellow;
     padding: 20px;
 
 }
 .box5{
-
-    background-color: green;
+    grid-area: box5;
+    background-color: rgb(23, 0, 128);
     padding: 20px;
 
 }
 .box6{
-    background-color: gray;
+    grid-area: box6;
+    background-color: greenyellow;
     padding: 20px;
 }
 .box7{
+    grid-area: box7;
     background-color:aquamarine;
     padding: 20px;
 }
 .box8{
+    grid-area: box8;
     background-color: rgb(255, 0, 85);
     padding: 20px;
 }
 .box9{
+    grid-area: box9;
     background-color: rgb(0, 255, 255);
     padding: 20px;
 
 }
 .box10{
+    grid-area: box10;
     background-color: rgb(128, 105, 0);
     padding: 20px;
 
 }
 .box11{
+    grid-area: box11;
     background-color: green;
     padding: 20px;
 
 }
 .box12{
-    background-color: gray;
+    grid-area: box12;
+    background-color: rgb(72, 72, 200);
     padding: 20px;
 }
+@media  screen and (max-width: 768px) {
+    body {
+       .boxes{
+        grid-template-areas: 
+        "box1 box2 box2 box3 box3 box3"
+        "box5 box2 box2 box3 box3 box3"
+        "box7 box8 box9 box3 box3 box3"
+        "box11 box11 box11 box3 box3 box3"
+        "box4 box4 box6 box6 box10 box12";
+       }
+    }
+  }
+  @media  screen and (max-width: 576px) {
+    body {
+       .boxes{
+        grid-template-areas: 
+       "box1""box2""box3""box4""box5""box6""box7""box8""box9""box10""box11""box12"
+       }
+    }
+  }
