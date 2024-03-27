@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: poppins;
 }
 
 header {
@@ -21,13 +22,52 @@ header {
 }
 .container .nav .pages {
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 .container .nav .pages li {
   list-style: none;
 }
 .container .nav .pages a {
   color: black;
+}
+.container .nav .pages .find {
+  position: relative;
+}
+.container .nav .pages .fa-chevron-down {
+  font-size: 15px;
+}
+.container .nav .pages .select {
+  position: absolute;
+  background-color: white;
+  width: 180px;
+  top: 30px;
+  right: 0px;
+  left: 0px;
+  z-index: 5;
+  display: none;
+  border-radius: 10px;
+}
+.container .nav .pages .select li {
+  padding: 10px;
+}
+.container .nav .pages .find:hover .select {
+  display: block;
+}
+.container .nav .pages .feature {
+  position: absolute;
+  background-color: white;
+  width: 200px;
+  top: 30px;
+  left: 0px;
+  z-index: 5;
+  display: none;
+  border-radius: 10px;
+}
+.container .nav .pages .feature li {
+  padding: 10px;
+}
+.container .nav .pages .find:hover .feature {
+  display: block;
 }
 
 .main {
@@ -39,7 +79,7 @@ header {
   gap: 20px;
 }
 .main .mainimg {
-  background-image: url(/assets/images/left-banner-image.jpg);
+  background-image: url(/hexashop/assets/images/left-banner-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -55,6 +95,11 @@ header {
   border: 1px solid white;
   color: white;
   margin-top: 20px;
+  transition: 0.3s;
+}
+.main .mainimg button:hover {
+  color: black;
+  background-color: white;
 }
 .main .mainimg h1 {
   font-size: 50px;
@@ -65,7 +110,7 @@ header {
 }
 .main .first {
   grid-area: first;
-  background-image: url(/assets/images/baner-right-image-04.jpg);
+  background-image: url(/hexashop/assets/images/baner-right-image-04.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -76,7 +121,7 @@ header {
 }
 .main .more {
   position: absolute;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.77);
   width: 400px;
   height: 320px;
   top: 25px;
@@ -99,7 +144,7 @@ header {
   transition: 1s;
 }
 .main .second {
-  background-image: url(/assets/images/baner-right-image-03.jpg);
+  background-image: url(/hexashop/assets/images/baner-right-image-03.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -111,7 +156,7 @@ header {
 }
 .main .mores {
   position: absolute;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.77);
   width: 400px;
   height: 320px;
   display: none;
@@ -119,7 +164,7 @@ header {
 .main .mores button {
   width: 149px;
   height: 48px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.827);
   border: 1px solid white;
   color: white;
 }
@@ -131,7 +176,7 @@ header {
   flex-direction: column;
 }
 .main .third {
-  background-image: url(/assets/images/baner-right-image-02.jpg);
+  background-image: url(/hexashop/assets/images/baner-right-image-02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -150,7 +195,7 @@ header {
 }
 .main .moret {
   position: absolute;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.77);
   width: 400px;
   height: 320px;
   display: none;
@@ -163,7 +208,7 @@ header {
   flex-direction: column;
 }
 .main .fourth {
-  background-image: url(/assets/images/baner-right-image-01.jpg);
+  background-image: url(/hexashop/assets/images/baner-right-image-01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -182,7 +227,7 @@ header {
 }
 .main .moref {
   position: absolute;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.77);
   width: 400px;
   height: 320px;
   display: none;
@@ -193,4 +238,167 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.latest {
+  margin-top: 150px;
+  padding-bottom: 150px;
+  border-top: 1px dotted gray;
+  border-bottom: 1px dotted gray;
+}
+.latest .head {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.latest .head p {
+  font-style: italic;
+  color: #a1a1a1;
+  font-size: 14px;
+}
+.latest .head h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.latest .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+.latest .cards .card .card1 .card2 {
+  position: relative;
+}
+.latest .cards h2 {
+  font-size: 22px;
+}
+.latest .cards p {
+  color: #a1a1a1;
+  font-size: 18px;
+}
+.latest .cards .rate {
+  display: flex;
+  justify-content: space-between;
+}
+.latest .cards .rate i {
+  font-size: 13px;
+}
+.latest .cards .access {
+  position: absolute;
+  top: 320px;
+  left: 50px;
+}
+.latest .cards .access i {
+  padding: 20px;
+  background-color: white;
+}
+.latest .cards .access2 {
+  position: absolute;
+  top: 320px;
+  right: 470px;
+}
+.latest .cards .access2 i {
+  padding: 20px;
+  background-color: white;
+}
+.latest .cards .access3 {
+  position: absolute;
+  top: 320px;
+  right: 60px;
+}
+.latest .cards .access3 i {
+  padding: 20px;
+  background-color: white;
+}
+.latest .cards .card .icons {
+  position: relative;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+.latest .cards .card:hover i {
+  opacity: 1;
+}
+.latest .cards .card1 .icons {
+  position: relative;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+.latest .cards .card1:hover i {
+  opacity: 1;
+}
+.latest .cards .card2 .icons {
+  position: relative;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+.latest .cards .card2:hover i {
+  opacity: 1;
+}
+.latest .fa-chevron-left, .latest .fa-chevron-right {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.explore {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  font-size: 17px;
+}
+.explore .latherBag, .explore .different {
+  width: 265px;
+  height: 265px;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.explore .products {
+  display: grid;
+  grid-template-areas: "desc desc latherbag image1" "desc desc image2 different";
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.explore .products h1 {
+  font-size: 40px;
+}
+.explore .products p {
+  color: #aaaaaa;
+  padding: 10px 0;
+}
+.explore .products .zip {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.explore .products .zip i {
+  font-size: 32px;
+}
+.explore .products button {
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  margin-top: 30px;
+  border: 0.5px solid black;
+  transition: 0.3s;
+}
+.explore .products button:hover {
+  background-color: black;
+  color: white;
+}
+.explore .desc {
+  grid-area: desc;
+}
+.explore .latherBag {
+  grid-area: latherbag;
+}
+.explore .image1 {
+  grid-area: image1;
+}
+.explore .image2 {
+  grid-area: image2;
+}
+.explore .different {
+  grid-area: different;
 }/*# sourceMappingURL=main.css.map */
