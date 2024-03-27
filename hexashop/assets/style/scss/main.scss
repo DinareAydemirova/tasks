@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    border-bottom: 1px dotted gray;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+
+    .nav {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pages {
+            display: flex;
+            gap: 30px;
+
+            li {
+                list-style: none;
+            }
+
+            a {
+                color: black;
+            }
+        }
+    }
+
+
+}
+
+.main {
+    margin-top: 80px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "mainimg mainimg first second"
+        "mainimg mainimg third fourth";
+    gap: 20px;
+
+    .mainimg {
+        background-image: url(/assets/images/left-banner-image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        grid-area: mainimg;
+        height: 80vh;
+
+        button {
+            width: 149px;
+            height: 48px;
+            background-color: rgba(250, 235, 215, 0);
+            border: 1px solid white;
+            color: white;
+            margin-top:20px ;
+        }
+        h1{
+            font-size: 50px;
+            padding-bottom: 20px;
+        }
+        h1, p, button{
+            margin-left: 80px;
+        }
+
+    }
+
+    .first {
+        grid-area: first;
+        background-image: url(/assets/images/baner-right-image-04.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .more {
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        width: 400px;
+        height: 320px;
+
+        top: 25px;
+        right: 25px;
+        display: none;
+        
+        button{
+            width: 149px;
+            height: 48px;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+        }
+        
+    }
+
+    .first:hover .more {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 1s;
+    }
+
+
+    .second {
+        background-image: url(/assets/images/baner-right-image-03.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        grid-area: second;
+        position: relative;
+
+    }
+    .mores{
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        width: 400px;
+        height: 320px;
+        display: none;
+        button{
+            width: 149px;
+            height: 48px;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+        }
+    }
+    .second:hover .mores {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .third {
+        background-image: url(/assets/images/baner-right-image-02.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        grid-area: third;
+        position: relative;
+        button{
+            width: 149px;
+            height: 48px;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+        }
+
+    }
+    .moret{
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        width: 400px;
+        height: 320px;
+        display: none;
+    }
+
+    .third:hover .moret {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .fourth {
+        background-image: url(/assets/images/baner-right-image-01.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        grid-area: fourth;
+        position: relative;
+        button{
+            width: 149px;
+            height: 48px;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+        }
+
+    }
+
+    .moref{
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        width: 400px;
+        height: 320px;
+        display: none;
+    }
+    .fourth:hover .moref {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+}
