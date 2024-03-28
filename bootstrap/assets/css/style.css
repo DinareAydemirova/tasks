@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mynav .row {
+  display: flex;
+  align-items: center;
+}
+.mynav .row ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+}
+.mynav .row h3 {
+  margin: 0;
+}
+
+.mainsec .main {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.mainsec .main p {
+  max-width: 500px;
+}
+.mainsec .main h1 {
+  max-width: 500px;
+}
+.mainsec .main .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.secondsec {
+  margin-top: 60px;
+}
+.secondsec a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
