@@ -105,7 +105,9 @@ header {
   font-size: 50px;
   padding-bottom: 20px;
 }
-.main .mainimg h1, .main .mainimg p, .main .mainimg button {
+.main .mainimg h1,
+.main .mainimg p,
+.main .mainimg button {
   margin-left: 80px;
 }
 .main .first {
@@ -264,10 +266,13 @@ header {
   justify-content: center;
   align-items: center;
   gap: 40px;
+}
+.latest .cards .card .card-image {
   position: relative;
 }
-.latest .cards .card .card1 .card2 {
-  position: relative;
+.latest .cards .card .card-image:hover .access {
+  bottom: 50px;
+  opacity: 1;
 }
 .latest .cards h2 {
   font-size: 22px;
@@ -285,56 +290,17 @@ header {
 }
 .latest .cards .access {
   position: absolute;
-  top: 320px;
-  left: 50px;
+  bottom: 0;
+  left: 90px;
+  opacity: 0;
+  transition: all 0.5s;
 }
 .latest .cards .access i {
   padding: 20px;
   background-color: white;
 }
-.latest .cards .access2 {
-  position: absolute;
-  top: 320px;
-  right: 470px;
-}
-.latest .cards .access2 i {
-  padding: 20px;
-  background-color: white;
-}
-.latest .cards .access3 {
-  position: absolute;
-  top: 320px;
-  right: 60px;
-}
-.latest .cards .access3 i {
-  padding: 20px;
-  background-color: white;
-}
-.latest .cards .card .icons {
-  position: relative;
-  transition: opacity 0.5s ease;
-  opacity: 0;
-}
-.latest .cards .card:hover i {
-  opacity: 1;
-}
-.latest .cards .card1 .icons {
-  position: relative;
-  transition: opacity 0.5s ease;
-  opacity: 0;
-}
-.latest .cards .card1:hover i {
-  opacity: 1;
-}
-.latest .cards .card2 .icons {
-  position: relative;
-  transition: opacity 0.5s ease;
-  opacity: 0;
-}
-.latest .cards .card2:hover i {
-  opacity: 1;
-}
-.latest .fa-chevron-left, .latest .fa-chevron-right {
+.latest .fa-chevron-left,
+.latest .fa-chevron-right {
   padding: 20px;
   border: 1px solid black;
 }
@@ -344,7 +310,8 @@ header {
   margin-bottom: 150px;
   font-size: 17px;
 }
-.explore .latherBag, .explore .different {
+.explore .latherBag,
+.explore .different {
   width: 265px;
   height: 265px;
   background-color: #f8f8f8;

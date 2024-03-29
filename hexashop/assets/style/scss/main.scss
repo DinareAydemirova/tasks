@@ -31,51 +31,59 @@ header {
             a {
                 color: black;
             }
-            .find{
+
+            .find {
                 position: relative;
-                
+
             }
-            .fa-chevron-down{
+
+            .fa-chevron-down {
                 font-size: 15px;
             }
-            .select{
+
+            .select {
                 position: absolute;
                 background-color: white;
                 width: 180px;
                 top: 30px;
-                right:0px;
+                right: 0px;
                 left: 0px;
                 z-index: 5;
-               display: none;
-               border-radius: 10px;
-               li{
-                padding: 10px;
-                
-                
-               }
-               
+                display: none;
+                border-radius: 10px;
+
+                li {
+                    padding: 10px;
+
+
+                }
+
             }
-            .find:hover .select{
+
+            .find:hover .select {
                 display: block;
-                
+
             }
-          .feature{
-            position: absolute;
-            background-color: white;
-            width: 200px;
-            top: 30px;
-            left:0px;
-            z-index: 5;
-           display: none;
-           border-radius: 10px;
-           li{
-            padding: 10px;
-           }
-          }
-          .find:hover .feature{
-            display: block;
-            
-        } 
+
+            .feature {
+                position: absolute;
+                background-color: white;
+                width: 200px;
+                top: 30px;
+                left: 0px;
+                z-index: 5;
+                display: none;
+                border-radius: 10px;
+
+                li {
+                    padding: 10px;
+                }
+            }
+
+            .find:hover .feature {
+                display: block;
+
+            }
         }
     }
 
@@ -107,18 +115,23 @@ header {
             background-color: rgba(250, 235, 215, 0);
             border: 1px solid white;
             color: white;
-            margin-top:20px ;
+            margin-top: 20px;
             transition: 0.3s;
         }
-        button:hover{
+
+        button:hover {
             color: black;
             background-color: white;
         }
-        h1{
+
+        h1 {
             font-size: 50px;
             padding-bottom: 20px;
         }
-        h1, p, button{
+
+        h1,
+        p,
+        button {
             margin-left: 80px;
         }
 
@@ -134,8 +147,8 @@ header {
         justify-content: center;
         flex-direction: column;
         position: relative;
-    
-        
+
+
     }
 
     .more {
@@ -147,14 +160,15 @@ header {
         top: 25px;
         right: 25px;
         display: none;
-        button{
+
+        button {
             width: 149px;
             height: 48px;
             background-color: black;
             border: 1px solid white;
             color: white;
         }
-        
+
     }
 
     .first:hover .more {
@@ -179,13 +193,15 @@ header {
         position: relative;
 
     }
-    .mores{
+
+    .mores {
         position: absolute;
         background-color: rgba(0, 0, 0, 0.77);
         width: 400px;
         height: 320px;
         display: none;
-        button{
+
+        button {
             width: 149px;
             height: 48px;
             background-color: rgba(0, 0, 0, 0.827);
@@ -193,14 +209,16 @@ header {
             color: white;
         }
     }
+
     .second:hover .mores {
         display: block;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        
+
     }
+
     .third {
         background-image: url(/hexashop/assets/images/baner-right-image-02.jpg);
         background-repeat: no-repeat;
@@ -211,7 +229,8 @@ header {
         flex-direction: column;
         grid-area: third;
         position: relative;
-        button{
+
+        button {
             width: 149px;
             height: 48px;
             background-color: black;
@@ -220,7 +239,8 @@ header {
         }
 
     }
-    .moret{
+
+    .moret {
         position: absolute;
         background-color: rgba(0, 0, 0, 0.77);
         width: 400px;
@@ -234,8 +254,9 @@ header {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        
+
     }
+
     .fourth {
         background-image: url(/hexashop/assets/images/baner-right-image-01.jpg);
         background-repeat: no-repeat;
@@ -246,7 +267,8 @@ header {
         flex-direction: column;
         grid-area: fourth;
         position: relative;
-        button{
+
+        button {
             width: 149px;
             height: 48px;
             background-color: black;
@@ -256,196 +278,183 @@ header {
 
     }
 
-    .moref{
+    .moref {
         position: absolute;
         background-color: rgba(0, 0, 0, 0.77);
         width: 400px;
         height: 320px;
         display: none;
     }
+
     .fourth:hover .moref {
         display: block;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        
+
     }
 
 }
-.latest{
+
+.latest {
     margin-top: 150px;
     padding-bottom: 150px;
     border-top: 1px dotted gray;
     border-bottom: 1px dotted gray;
 
-    .head{
+    .head {
         margin-top: 100px;
         margin-bottom: 50px;
-        p{
+
+        p {
             font-style: italic;
             color: #a1a1a1;
             font-size: 14px;
         }
-        h1{
+
+        h1 {
             font-size: 32px;
             font-weight: 700;
         }
     }
-    .cards{
+
+    .cards {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 40px;
-        position: relative;
-        .card .card1 .card2{
-            position: relative;
+
+        .card {
+
+            // position: relative;
+            .card-image {
+                position: relative;
+            }
+
+            .card-image:hover .access {
+                bottom: 50px;
+                opacity: 1;
+            }
         }
-        h2{
+
+        h2 {
             font-size: 22px;
         }
-        p{
+
+        p {
             color: #a1a1a1;
             font-size: 18px;
         }
-        .rate{
+
+        .rate {
             display: flex;
             justify-content: space-between;
-            i{
+
+            i {
                 font-size: 13px;
             }
         }
+
         .access {
             position: absolute;
-            top: 320px;
-            left: 50px;
-           
-           i{
-            padding: 20px;
-            background-color: white;
-           
-           }
-        }
-        .access2{
-            position: absolute;
-            top: 320px;
-            right: 470px;
-           
-           i{
-            padding: 20px;
-            background-color: white;
-           
-           }
-        }
-        .access3{
-            position: absolute;
-            top: 320px;
-            right: 60px;
-           
-           i{
-            padding: 20px;
-            background-color: white;
-           
-           }
-        }
-        .card .icons{
-            position: relative;
-            transition: opacity 0.5s ease; 
+            bottom: 0;
+            left: 90px;
             opacity: 0;
+            transition:  all 0.5s;
+
+            i {
+                padding: 20px;
+                background-color: white;
+
+            }
         }
-        
-        .card:hover i {
-             
-            opacity: 1; 
-        }
-        .card1 .icons{
-            position: relative;
-            transition: opacity 0.5s ease; 
-            opacity: 0;
-        }
-        .card1:hover i {
-             
-            opacity: 1; 
-        }
-        .card2 .icons{
-            position: relative;
-            transition: opacity 0.5s ease; 
-            opacity: 0;
-        }
-        .card2:hover i {
-             
-            opacity: 1; 
-        }
-       
-       
+
     }
-    .fa-chevron-left , .fa-chevron-right{
-       padding: 20px;
+
+    .fa-chevron-left,
+    .fa-chevron-right {
+        padding: 20px;
         border: 1px solid black;
     }
 }
-.explore{
+
+.explore {
     margin-top: 150px;
     margin-bottom: 150px;
     font-size: 17px;
-    .latherBag ,.different{
+
+    .latherBag,
+    .different {
         width: 265px;
         height: 265px;
-        background-color:#f8f8f8;
+        background-color: #f8f8f8;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .products{
+
+    .products {
         display: grid;
         grid-template-areas: "desc desc latherbag image1"
-        "desc desc image2 different" ;
+            "desc desc image2 different";
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
-        h1{
+
+        h1 {
             font-size: 40px;
         }
-        p{
+
+        p {
             color: #aaaaaa;
             padding: 10px 0;
         }
-       .zip{
-        padding: 20px 0;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        i{
-            font-size: 32px;
+
+        .zip {
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            i {
+                font-size: 32px;
+            }
+
         }
-       
-       }
-       button{
-        width: 150px;
-        height: 50px;
-        background-color: white;
-        margin-top: 30px;
-        border: 0.5px solid black;
-        transition: 0.3s;
+
+        button {
+            width: 150px;
+            height: 50px;
+            background-color: white;
+            margin-top: 30px;
+            border: 0.5px solid black;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
     }
-    button:hover{
-        background-color: black;
-        color: white;
-    }
-    }
-    .desc{
+
+    .desc {
         grid-area: desc;
     }
-    .latherBag{
+
+    .latherBag {
         grid-area: latherbag;
     }
-    .image1{
+
+    .image1 {
         grid-area: image1;
     }
-    .image2{
+
+    .image2 {
         grid-area: image2;
     }
-    .different{
+
+    .different {
         grid-area: different;
     }
 }
