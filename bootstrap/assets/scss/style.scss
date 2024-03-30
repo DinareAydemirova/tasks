@@ -6,10 +6,11 @@
 
 
 .mynav{
-    
+   padding: 15px;
     .row {
         display: flex;
         align-items: center;
+       
         
         ul{
           display: flex;
@@ -35,14 +36,12 @@
     .main{
         display: flex;
         flex-direction: column;
-       
-        color: white;
-        height: 600px;
+        height: 350px;
         align-items: center;
         justify-content: center;
         text-align: center;
         p{
-            max-width: 500px;
+            max-width: 700px;
         }
         h1{
             max-width: 500px;
@@ -56,7 +55,101 @@
 
 .secondsec{
     margin-top: 60px;
+    margin-bottom: 60px;
     a{
         text-decoration: none;
+    }
+    .fa-2x{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        width: 70px;
+        
+    }
+}
+.thirdsec{
+    .title{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .row{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        .price{
+            display: flex;
+            align-items: center;
+         }
+         .border{
+            padding: 50px;
+         }
+         .cards{
+            display: flex;
+            gap: 20px;
+         }
+         button{
+            width: 278px;
+         }
+    }
+    
+}
+.fourthsec{
+    .title{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .texts{
+        margin: 10px;
+        gap: 10px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       .card-body{
+        display: flex;
+        align-items: center;
+        i{
+            padding-bottom: 55px;
+        }
+       }
+    }
+}
+.fifthsec{
+  padding: 50px 0;
+    i{
+        width: 70px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .row{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+        
+    }
+}
+footer{
+    padding: 40px;
+    div{
+        display: flex;
+    justify-content: center;
     }
 }

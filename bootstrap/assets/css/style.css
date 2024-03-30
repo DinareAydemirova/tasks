@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+.mynav {
+  padding: 15px;
+}
 .mynav .row {
   display: flex;
   align-items: center;
@@ -23,14 +26,13 @@
 .mainsec .main {
   display: flex;
   flex-direction: column;
-  color: white;
-  height: 600px;
+  height: 350px;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 .mainsec .main p {
-  max-width: 500px;
+  max-width: 700px;
 }
 .mainsec .main h1 {
   max-width: 500px;
@@ -42,7 +44,96 @@
 
 .secondsec {
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 .secondsec a {
   text-decoration: none;
+}
+.secondsec .fa-2x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+}
+
+.thirdsec .title {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.thirdsec .row {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.thirdsec .row .price {
+  display: flex;
+  align-items: center;
+}
+.thirdsec .row .border {
+  padding: 50px;
+}
+.thirdsec .row .cards {
+  display: flex;
+  gap: 20px;
+}
+.thirdsec .row button {
+  width: 278px;
+}
+
+.fourthsec .title {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fourthsec .texts {
+  margin: 10px;
+  gap: 10px;
+}
+.fourthsec .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fourthsec .cards .card-body {
+  display: flex;
+  align-items: center;
+}
+.fourthsec .cards .card-body i {
+  padding-bottom: 55px;
+}
+
+.fifthsec {
+  padding: 50px 0;
+}
+.fifthsec i {
+  width: 70px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fifthsec .title {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fifthsec .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  padding: 40px;
+}
+footer div {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
