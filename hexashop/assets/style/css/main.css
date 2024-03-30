@@ -124,9 +124,9 @@ header {
 .main .more {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.77);
-  width: 400px;
-  height: 320px;
-  top: 25px;
+  width: 300px;
+  height: 300px;
+  top: 15px;
   right: 25px;
   display: none;
 }
@@ -159,8 +159,8 @@ header {
 .main .mores {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.77);
-  width: 400px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   display: none;
 }
 .main .mores button {
@@ -198,8 +198,8 @@ header {
 .main .moret {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.77);
-  width: 400px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   display: none;
 }
 .main .third:hover .moret {
@@ -230,8 +230,8 @@ header {
 .main .moref {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.77);
-  width: 400px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   display: none;
 }
 .main .fourth:hover .moref {
