@@ -1,0 +1,25 @@
+.hero {
+  width: 100vw;
+  height: 70vh;
+  background-image: url("https://avasystems.ru/img/bg-masthead.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+}
+input {
+  padding: 20px 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px 10px;
+  width: 500px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 3rem;
+}

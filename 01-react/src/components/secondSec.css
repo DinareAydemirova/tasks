@@ -1,0 +1,18 @@
+.second{
+    display: flex;
+    gap: 70px;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+}
+.text{
+    padding: 10px 60px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.418);
+}
+h3{
+font-size: 28px;
+}
+i{
+    color: #0d6efd;
+}
