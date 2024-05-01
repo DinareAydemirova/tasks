@@ -17,9 +17,9 @@ function App() {
 
   return (
     <>
-      {/* <Increment state={state} dispatch={dispatch} />
+      <Increment state={state} dispatch={dispatch} />
       <Count state={state}/>
-      <Decrement state={state} dispatch={dispatch} /> */}
+      <Decrement state={state} dispatch={dispatch} />
       <ToDo />
     </>
   );
