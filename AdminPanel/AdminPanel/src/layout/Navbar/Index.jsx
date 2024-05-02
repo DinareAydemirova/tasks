@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-
+import "./style.css"
 
 const Layout = () => {
   return (
@@ -71,7 +71,7 @@ const Layout = () => {
           <div className="flex space-x-4">
             {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
             <nav>
-        <ul>
+        <ul className='ul'>
           <li>
             <Link to="/">Admin</Link>
           </li>
