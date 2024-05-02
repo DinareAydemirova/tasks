@@ -1,5 +1,3 @@
-/** @format */
-
 import React, { useReducer } from "react";
 import reducer from "../reducer";
 import { v4 as uuidv4 } from "uuid";
@@ -9,6 +7,16 @@ const ToDo = () => {
     value: "",
     data: [],
   });
+
+
+  const handleDelete = (id) => {
+    dispatch({
+      type: "delTodo",
+      id: id,
+    });
+  };
+
+  
 
   return (
     <div>
@@ -26,7 +34,7 @@ const ToDo = () => {
         onClick={() => {
           dispatch({
             type: "SetData",
-            data: state.data,
+            value: state.value,
           });
           //    console.log(state.value);
         }}
@@ -39,7 +47,10 @@ const ToDo = () => {
           return (
             <li key={uuidv4()}>
               {elem}
-              <button onClick={() => {}}>Delete</button>
+              <button onClick={() => {handleDelete(elem.id)}}>Delete</button>
+              <button onClick={()=>{
+                let newTOdO= prompt("edit todo", elem.name)
+              }}>Edit</button>
             </li>
           );
         })}
