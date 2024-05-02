@@ -1,13 +1,16 @@
 /** @format */
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import "./style.css";
 import axios from "axios";
 const Index = () => {
   const [categories, setCategories] = useState([]);
   const [category, setCategory] = useState("");
 
-  const baseURL = "https://northwind.vercel.app/api/categories";
+
+  const [state, ]useReducer
+
+  // const baseURL = "https://northwind.vercel.app/api/categories";
   const getAll = async () => {
     let response = await axios.get(baseURL);
     setCategory(response.data);
