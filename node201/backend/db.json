@@ -1,0 +1,22 @@
+{
+    "students": [
+        {
+            "id":"1",
+            "name":"Vusale",
+            "country":"America"
+
+        },
+        {
+            "id":"2",
+            "name":"Gulcin",
+            "country":"Spain"
+
+        },
+        {
+            "id":"3",
+            "name":"Shahnaz",
+            "country":"Italy"
+
+        }
+    ]
+}
