@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container .texts {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 850px;
+  font-size: 2rem;
+}
+.container .texts .desc {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+.container .texts .shopbtn {
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 15px 40px;
+  transition: 0.5s;
+}
+.container .texts .shopbtn:hover {
+  background-color: white;
+  color: black;
+}
+.container .texts .clubbtn {
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+  padding: 15px 40px;
+  transition: 0.5s;
+}
+.container .texts .clubbtn:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+.container .texts .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.hero {
+  background-image: url("./../../../../assets/hero_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 850px;
+}
+
+@media only screen and (max-width: 600px) {
+  .texts .buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=style.module.css.map */

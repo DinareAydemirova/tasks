@@ -1,6 +1,7 @@
 /** @format */
 
 import Layout from "../components/layout/Layout";
+import Admin from "../components/pages/admin/Index";
 import Basket from "../components/pages/basket/Index";
 import Home from "../components/pages/home/Index";
 import Hero from "../components/pages/home/hero/Index";
@@ -24,6 +25,11 @@ const router = [
         element: <Wishlist />,
       },
     ],
+   
+  },
+  {
+    path: "/admin",
+    element: <Admin />,
   },
 ];
 
